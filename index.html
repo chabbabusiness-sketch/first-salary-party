@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#120c04" />
+  <meta name="description" content="First Salary Party invitation for Nushan and Chavindu at Galle Face Hotel, Colombo." />
+  <title>First Salary Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#090806; --bg-soft:#151008; --card:rgba(18,12,6,.60); --card-strong:rgba(24,16,8,.70);
+      --gold:#ddb562; --gold-light:#f8e1a5; --cream:#fbf2e6; --muted:#e4d1b8; --line:rgba(221,181,98,.35);
+      --white-line:rgba(255,255,255,.14); --shadow:0 30px 90px rgba(0,0,0,.38); --radius:30px;
+      --serif:"Cormorant Garamond", Georgia, serif; --sans:"Montserrat", Arial, sans-serif;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--cream);background:radial-gradient(circle at 15% 15%, rgba(237,124,58,.10), transparent 22%),radial-gradient(circle at 82% 10%, rgba(234,207,84,.11), transparent 24%),radial-gradient(circle at 80% 75%, rgba(165,54,173,.10), transparent 22%),linear-gradient(180deg,#0c0804,#090806 30%,#0a0806);font-family:var(--sans);line-height:1.65;overflow-x:hidden}
+    body.locked{overflow:hidden} a{text-decoration:none;color:inherit} button,input,select{font:inherit} button{cursor:pointer}
+    .grain{position:fixed;inset:0;pointer-events:none;opacity:.10;z-index:999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.11'/%3E%3C/svg%3E")}
+    .container{width:min(1100px,calc(100% - 38px));margin:0 auto}.section{padding:98px 0;position:relative}.center{text-align:center}
+    .eyebrow{margin:0 0 14px;text-transform:uppercase;letter-spacing:.28em;font-size:.72rem;color:var(--gold);font-weight:600}.section-title{margin:0;font-family:var(--serif);font-size:clamp(2.8rem,7vw,5.6rem);font-weight:500;line-height:.94;letter-spacing:-.03em}.section-copy{max-width:700px;margin:18px auto 0;color:var(--muted);font-size:.98rem}.gold-rule{display:flex;align-items:center;gap:14px;justify-content:center;margin:26px 0;color:var(--gold)}.gold-rule::before,.gold-rule::after{content:"";width:72px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}.gold-rule::after{transform:rotate(180deg)}
+    .intro{position:fixed;inset:0;z-index:5000;display:grid;place-items:center;background:linear-gradient(rgba(12,8,4,.40),rgba(12,8,4,.76)),radial-gradient(circle at 20% 22%, rgba(255,158,52,.22), transparent 24%),radial-gradient(circle at 78% 14%, rgba(253,217,79,.18), transparent 18%),url('assets/buffet-hero.png') center/cover no-repeat;transition:opacity .8s ease,visibility .8s ease}.intro.hide{opacity:0;visibility:hidden}
+    .intro-card{width:min(640px,calc(100% - 32px));padding:clamp(42px,8vw,72px) clamp(24px,7vw,68px);text-align:center;border:1px solid var(--line);background:linear-gradient(145deg,rgba(16,10,6,.72),rgba(16,10,6,.42));backdrop-filter:blur(10px);box-shadow:var(--shadow);border-radius:4px;position:relative;overflow:hidden}.intro-card::before,.intro-card::after{content:"";position:absolute;width:110px;height:110px;border-color:rgba(221,181,98,.42)}.intro-card::before{left:14px;top:14px;border-left:1px solid;border-top:1px solid}.intro-card::after{right:14px;bottom:14px;border-right:1px solid;border-bottom:1px solid}
+    .seal{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;margin:0 auto 26px;background:radial-gradient(circle at 35% 28%,var(--gold-light),#a37d2f 65%,#765817);color:#171208;font-family:var(--serif);font-size:1.55rem;font-weight:700;box-shadow:0 14px 34px rgba(0,0,0,.4),inset 0 0 0 5px rgba(255,255,255,.10);line-height:1.05;text-align:center}
+    .intro h1{font-family:var(--serif);font-size:clamp(3rem,10vw,5.8rem);line-height:.9;font-weight:500;margin:10px 0 14px}.intro p{color:var(--muted);max-width:490px;margin:0 auto 28px}
+    .primary-btn,.outline-btn{border-radius:999px;padding:14px 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;transition:transform .25s ease,background .25s ease,border-color .25s ease,color .25s ease;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;font-weight:600}.primary-btn{border:1px solid var(--gold);background:var(--gold);color:#161109;box-shadow:0 10px 30px rgba(221,181,98,.16)}.primary-btn:hover{transform:translateY(-2px);background:var(--gold-light)}.outline-btn{border:1px solid var(--line);background:rgba(255,255,255,.025);color:var(--cream)}
+    .nav{position:fixed;left:0;right:0;top:0;z-index:1000;padding:16px 0;transition:background .3s ease,border-color .3s ease,padding .3s ease}.nav.scrolled{padding:11px 0;background:rgba(9,8,6,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--white-line)}.nav-inner{display:flex;align-items:center;justify-content:flex-end;gap:24px}.brand{display:none}.nav-links{display:flex;align-items:center;gap:24px}.nav-links a{color:#f0e1c8;font-size:.72rem;text-transform:uppercase;letter-spacing:.15em}.nav-links a:hover{color:var(--gold-light)}.menu-btn{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;color:var(--cream);background:rgba(255,255,255,.03)}
+    .hero{min-height:100svh;display:grid;place-items:center;position:relative;overflow:hidden;padding:120px 0 70px;isolation:isolate;background:linear-gradient(rgba(10,6,3,.38),rgba(10,6,3,.70)),radial-gradient(circle at 17% 15%, rgba(255,164,68,.22), transparent 26%),radial-gradient(circle at 83% 20%, rgba(248,203,69,.18), transparent 24%),url('assets/buffet-gallery.png') center/cover no-repeat}.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 48% 42%, rgba(221,181,98,.12), transparent 28%),radial-gradient(circle at 30% 85%, rgba(255,255,255,.045), transparent 24%),linear-gradient(180deg, rgba(9,8,6,.18), rgba(9,8,6,.62))}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(8,6,4,.14), rgba(8,6,4,.25) 28%, rgba(8,6,4,.70) 100%);z-index:-1}.orb{position:absolute;border-radius:50%;filter:blur(2px);border:1px solid rgba(221,181,98,.16);z-index:-1}.orb.one{width:560px;height:560px;top:12%;left:50%;transform:translateX(-50%)}.orb.two{width:390px;height:390px;top:22%;left:50%;transform:translateX(-50%);border-color:rgba(221,181,98,.24)}
+    .hero-content{text-align:center;max-width:980px;position:relative;z-index:2}.hero-kicker{text-transform:uppercase;letter-spacing:.33em;color:#ffedbe;font-size:.72rem;margin-bottom:22px}.hero h1{margin:0;font-family:var(--serif);font-weight:500;letter-spacing:-.045em;line-height:.82;font-size:clamp(4rem,11vw,8.3rem)}.hero h1 .subline{display:block;font-style:italic;font-weight:400;color:var(--gold-light);font-size:.42em;margin-top:.44em;line-height:1.08;letter-spacing:-.01em}.hero-sub{margin:34px auto 0;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px 18px;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:#fff2dd}.hero-sub .dot{color:var(--gold)}.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:grid;gap:9px;justify-items:center;text-transform:uppercase;letter-spacing:.22em;font-size:.60rem;color:#e1cfab}.mouse{width:23px;height:36px;border:1px solid rgba(221,181,98,.46);border-radius:20px;position:relative}.mouse::after{content:"";position:absolute;width:3px;height:7px;border-radius:10px;background:var(--gold);left:50%;top:7px;transform:translateX(-50%);animation:wheel 1.6s ease infinite}@keyframes wheel{0%{opacity:0;transform:translate(-50%,0)}30%{opacity:1}100%{opacity:0;transform:translate(-50%,12px)}}
+    .section.buffet-celebration::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(12,7,4,.60),rgba(12,7,4,.78)),radial-gradient(circle at 18% 18%, rgba(255,128,42,.12), transparent 20%),radial-gradient(circle at 82% 24%, rgba(250,202,83,.10), transparent 20%),radial-gradient(circle at 78% 75%, rgba(204,68,85,.10), transparent 24%),url('assets/buffet-hero.png') center/cover no-repeat;opacity:.96;z-index:-2}.section.buffet-celebration::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(9,8,6,.18), rgba(9,8,6,.68));z-index:-1}
+    .message-wrap{max-width:980px;margin:0 auto 44px;padding:clamp(34px,7vw,70px);border-radius:36px;border:1px solid var(--line);background:linear-gradient(145deg, rgba(32,20,10,.72), rgba(20,12,6,.46));backdrop-filter:blur(12px);box-shadow:var(--shadow);text-align:center;position:relative;overflow:hidden}.message-wrap::before{content:"“";position:absolute;left:34px;top:-12px;font-family:var(--serif);font-size:9rem;color:rgba(221,181,98,.16);line-height:1}.message-wrap blockquote{margin:0;font-family:var(--serif);font-size:clamp(2rem,5vw,4rem);font-style:italic;font-weight:400;line-height:1.08}.message-wrap p{max-width:800px;margin:24px auto 0;color:var(--muted);font-size:1rem}
+    .details-shell{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch}.details-main,.details-side{border:1px solid var(--white-line);border-radius:32px;padding:clamp(28px,5vw,42px);background:linear-gradient(160deg, rgba(19,12,6,.70), rgba(19,12,6,.48));backdrop-filter:blur(10px)}.details-main h3,.details-side h3{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.3rem);font-weight:500;line-height:1;margin:0 0 16px}.details-main p,.details-side p{margin:0;color:var(--muted)}
+    .quick-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}.quick-card{padding:22px;border:1px solid var(--white-line);border-radius:22px;background:rgba(255,255,255,.04)}.quick-card .label{display:block;color:var(--gold-light);text-transform:uppercase;letter-spacing:.14em;font-size:.67rem;margin-bottom:8px}.quick-card strong{display:block;font-size:1rem;font-weight:600;color:var(--cream)}.map-btn{margin-top:26px}
+    .rsvp-wrap{position:relative}.rsvp-wrap::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(12,7,4,.58),rgba(12,7,4,.82)),radial-gradient(circle at 15% 22%, rgba(255,153,66,.12), transparent 22%),radial-gradient(circle at 82% 18%, rgba(255,210,95,.12), transparent 18%),url('assets/buffet-gallery.png') center/cover no-repeat;z-index:-2}.rsvp-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(9,8,6,.18), rgba(9,8,6,.72));z-index:-1}
+    .rsvp-shell{max-width:840px;margin:0 auto;border:1px solid var(--white-line);background:linear-gradient(160deg, rgba(19,12,6,.72), rgba(19,12,6,.48));backdrop-filter:blur(10px);border-radius:32px;padding:clamp(28px,5vw,44px)}.rsvp-head h3{font-family:var(--serif);font-size:clamp(2.3rem,5vw,4rem);font-weight:500;line-height:.96;margin:0 0 12px}.rsvp-head p{margin:0;color:var(--muted)}.deadline{margin-top:12px;color:var(--gold-light);font-size:.74rem;text-transform:uppercase;letter-spacing:.14em}
+    .rsvp-form{margin-top:26px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:8px}.field label{color:#f0e4cf;font-size:.69rem;text-transform:uppercase;letter-spacing:.13em}.field input,.field select{width:100%;color:var(--cream);background:rgba(0,0,0,.20);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:14px 15px;outline:none;transition:border-color .2s ease,box-shadow .2s ease}.field input:focus,.field select:focus{border-color:rgba(221,181,98,.62);box-shadow:0 0 0 3px rgba(221,181,98,.07)}.field select option{color:#111}.rsvp-form .primary-btn{width:100%;margin-top:18px}.form-note{margin:13px 0 0;color:#ccb997;font-size:.72rem;text-align:center}
+    footer{position:relative;padding:80px 0 42px;text-align:center;overflow:hidden;isolation:isolate}.footer-bg{position:absolute;inset:0;z-index:-2;background:linear-gradient(rgba(10,7,4,.58), rgba(10,7,4,.86)),radial-gradient(circle at 16% 18%, rgba(255,150,62,.12), transparent 20%),radial-gradient(circle at 84% 20%, rgba(255,216,102,.12), transparent 18%),url('assets/galle-face-night.png') center/cover no-repeat}.footer-title{font-family:var(--serif);font-size:clamp(3rem,7vw,5rem);color:var(--gold-light);margin:0;font-weight:500}.footer-meta{color:var(--muted);text-transform:uppercase;letter-spacing:.14em;font-size:.67rem;margin-top:12px}.copyright{color:#c3b08c;font-size:.68rem;margin-top:34px}
+    .music-btn{position:fixed;right:20px;bottom:20px;z-index:1100;width:54px;height:54px;border-radius:50%;border:1px solid var(--line);color:var(--gold-light);background:rgba(10,9,7,.86);backdrop-filter:blur(12px);box-shadow:0 10px 30px rgba(0,0,0,.25)}.music-btn.playing::after{content:"";position:absolute;inset:-5px;border:1px solid rgba(221,181,98,.35);border-radius:50%;animation:pulse 1.8s infinite}@keyframes pulse{0%{transform:scale(.9);opacity:0}45%{opacity:1}100%{transform:scale(1.25);opacity:0}}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.confetti{position:fixed;top:-16px;z-index:4999;pointer-events:none;width:7px;height:12px;border-radius:2px;animation:fall linear forwards}@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(760deg);opacity:.2}}.toast{position:fixed;left:50%;bottom:24px;z-index:4000;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#17140f;border:1px solid var(--line);color:var(--cream);padding:12px 18px;border-radius:999px;font-size:.78rem;transition:.3s ease;box-shadow:var(--shadow)}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media (max-width:900px){.details-shell{grid-template-columns:1fr}.quick-list{grid-template-columns:1fr 1fr}.form-grid{grid-template-columns:1fr}.nav-links{position:fixed;top:72px;left:20px;right:20px;display:grid;padding:22px;background:rgba(10,9,7,.96);border:1px solid var(--line);border-radius:20px;transform:translateY(-10px) scale(.98);opacity:0;visibility:hidden;transition:.25s ease}.nav-links.open{transform:translateY(0) scale(1);opacity:1;visibility:visible}.menu-btn{display:grid;place-items:center}.nav-inner{justify-content:space-between}.brand{display:block;font-family:var(--serif);font-size:1.35rem;color:var(--gold-light);opacity:0;width:42px}}
+    @media (max-width:620px){.container{width:min(100% - 24px,1100px)}.hero{padding-top:100px}.hero h1{font-size:clamp(3.7rem,18vw,6.7rem)}.hero-sub{max-width:330px}.orb.one{width:400px;height:400px}.orb.two{width:270px;height:270px}.message-wrap{border-radius:26px}.quick-list{grid-template-columns:1fr}.section{padding:82px 0}}
+    @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto !important;animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}}
+  </style>
+</head>
+<body class="locked">
+  <div class="grain"></div>
+
+  <div class="intro" id="intro">
+    <div class="intro-card">
+      <div class="seal">1st<br>Pay</div>
+      <p class="eyebrow">A special milestone worth celebrating</p>
+      <h1>First Salary<br>Party</h1>
+      
+      <button class="primary-btn" id="openInvite">Open Invitation <span>→</span></button>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-hidden="true">•</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#details">Details</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="orb one"></div>
+      <div class="orb two"></div>
+      <div class="container hero-content reveal">
+        <p class="hero-kicker">Nushan &amp; Chavindu</p>
+        <h1>First Salary Party<span class="subline">An Evening to Celebrate</span></h1>
+        <div class="hero-sub">
+          <span>29 September 2026 · 7:00 PM onwards</span>
+          <span class="dot">✦</span>
+          <span>Galle Face Hotel · Colombo</span>
+        </div>
+      </div>
+      <a href="#details" class="scroll-hint" aria-label="Scroll to details"><span>Scroll</span><span class="mouse"></span></a>
+    </section>
+
+    <section class="section buffet-celebration" id="details">
+      <div class="container">
+        <div class="message-wrap reveal">
+          <p class="eyebrow">A note from us</p>
+          <blockquote>Our first salaries are more than money. They are a reminder of the effort, support and new beginnings that brought us here, and we are truly delighted to begin this new journey with you.</blockquote>
+        </div>
+
+        <div class="details-shell reveal">
+          <div class="details-main">
+            <p class="eyebrow">Party details</p>
+            <h3>One Beautiful Evening</h3>
+            <div class="quick-list">
+              <div class="quick-card"><span class="label">Date</span><strong>29 September 2026</strong></div>
+              <div class="quick-card"><span class="label">Time</span><strong>7:00 PM onwards</strong></div>
+              <div class="quick-card"><span class="label">Venue</span><strong>Galle Face Hotel</strong></div>
+              <div class="quick-card"><span class="label">Address</span><strong>2 Galle Road, Colombo 03, Sri Lanka</strong></div>
+            </div>
+            <a class="primary-btn map-btn" id="mapLink" href="https://www.google.com/maps/search/?api=1&query=Galle%20Face%20Hotel%2C%202%20Galle%20Road%2C%20Colombo%2003%2C%20Sri%20Lanka" target="_blank" rel="noopener">Open Google Map <span>↗</span></a>
+          </div>
+          <div class="details-side">
+            <h3>Lovely Buffet Dinner</h3>
+            <p>A colorful buffet and celebration atmosphere will be part of the evening, with time to relax, celebrate and enjoy the moment together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp-wrap" id="rsvp">
+      <div class="container">
+        <div class="center reveal">
+          <p class="eyebrow">Will you join us?</p>
+          <h2 class="section-title">RSVP</h2>
+          <p class="section-copy">Please send a quick response through WhatsApp.</p>
+        </div>
+        <div class="rsvp-shell reveal">
+          <div class="rsvp-head">
+            <p class="eyebrow">Reply here</p>
+            <h3>We would love to hear from you.</h3>
+            <div class="deadline" id="rsvpDeadline">Kindly reply by: 27 September 2026</div>
+          </div>
+          <form class="rsvp-form" id="rsvpForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="guestName">Person name</label>
+                <input id="guestName" name="guestName" type="text" placeholder="Enter your name" required />
+              </div>
+              <div class="field">
+                <label for="attendance">Attendance</label>
+                <select id="attendance" name="attendance" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="Yes, I will attend">Yes, I will attend</option>
+                  <option value="Sorry, I cannot attend">Sorry, I cannot attend</option>
+                </select>
+              </div>
+            </div>
+            <button class="primary-btn" type="submit">Send RSVP on WhatsApp <span>↗</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-bg"></div>
+    <div class="container">
+      <p class="eyebrow">With appreciation</p>
+      <h2 class="footer-title">Thank You</h2>
+      <div class="footer-meta">29 September 2026 · Galle Face Hotel, Colombo</div>
+      <div class="copyright">© <span id="year"></span> · Made for a milestone worth remembering.</div>
+    </div>
+  </footer>
+
+  <button class="music-btn" id="musicBtn" aria-label="Toggle music" title="Toggle music">♪</button>
+  <audio id="bgMusic" src="assets/bluewave-better-days.mp3" loop preload="auto"></audio>
+  <div class="toast" id="toast">Updated</div>
+
+  <script>
+    const EVENT_CONFIG = {
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Galle%20Face%20Hotel%2C%202%20Galle%20Road%2C%20Colombo%2003%2C%20Sri%20Lanka",
+      whatsappNumber: "94741278598",
+      rsvpDeadline: "27 September 2026",
+      musicUrl: "assets/bluewave-better-days.mp3"
+    };
+
+    const $ = (selector) => document.querySelector(selector);
+    const $$ = (selector) => [...document.querySelectorAll(selector)];
+
+    function applyConfig() {
+      $("#mapLink").href = EVENT_CONFIG.mapUrl;
+      $("#rsvpDeadline").textContent = `Kindly reply by: ${EVENT_CONFIG.rsvpDeadline}`;
+      $("#bgMusic").src = EVENT_CONFIG.musicUrl;
+      $("#year").textContent = new Date().getFullYear();
+    }
+
+    $("#openInvite").addEventListener("click", async () => {
+      $("#intro").classList.add("hide");
+      document.body.classList.remove("locked");
+      launchConfetti(70);
+      const audio = $("#bgMusic");
+      audio.volume = 0.95;
+      try {
+        await audio.play();
+        $("#musicBtn").classList.add("playing");
+      } catch (_) {
+        showToast("Click the music button if sound does not start.");
+      }
+    });
+
+    window.addEventListener("scroll", () => {
+      $("#nav").classList.toggle("scrolled", window.scrollY > 24);
+    });
+
+    $("#menuBtn").addEventListener("click", () => $("#navLinks").classList.toggle("open"));
+    $$("#navLinks a").forEach(link => link.addEventListener("click", () => $("#navLinks").classList.remove("open")));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    $$(".reveal").forEach((el, index) => {
+      el.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
+      observer.observe(el);
+    });
+
+    $("#rsvpForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const name = $("#guestName").value.trim();
+      const attendance = $("#attendance").value;
+      const phone = EVENT_CONFIG.whatsappNumber.replace(/\D/g, "");
+      if (!name || !attendance) {
+        showToast("Please enter the person name and attendance.");
+        return;
+      }
+      if (phone.length < 8 || phone.includes("X")) {
+        showToast("Add your WhatsApp number in EVENT_CONFIG first.");
+        return;
+      }
+      const text = [
+        `🎉 *First Salary Party RSVP*`,
+        ``,
+        `Person name: ${name}`,
+        `Attendance: ${attendance}`
+      ].join("\n");
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+
+    $("#musicBtn").addEventListener("click", async () => {
+      const audio = $("#bgMusic");
+      audio.volume = 0.95;
+      if (audio.paused) {
+        try {
+          await audio.play();
+          $("#musicBtn").classList.add("playing");
+        } catch (_) {
+          showToast("Music could not start. Try clicking again.");
+        }
+      } else {
+        audio.pause();
+        $("#musicBtn").classList.remove("playing");
+      }
+    });
+
+    function launchConfetti(count = 60) {
+      const palette = ["#ddb562", "#f8e1a5", "#ffb36b", "#ffefc8", "#e37e46"];
+      for (let i = 0; i < count; i++) {
+        const piece = document.createElement("span");
+        piece.className = "confetti";
+        piece.style.left = `${Math.random() * 100}vw`;
+        piece.style.background = palette[Math.floor(Math.random() * palette.length)];
+        piece.style.setProperty("--drift", `${(Math.random() - 0.5) * 220}px`);
+        piece.style.animationDuration = `${2.8 + Math.random() * 2.8}s`;
+        piece.style.animationDelay = `${Math.random() * .35}s`;
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 6200);
+      }
+    }
+
+    function showToast(message) {
+      const toast = $("#toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove("show"), 3000);
+    }
+
+    applyConfig();
+  </script>
+</body>
+</html>
